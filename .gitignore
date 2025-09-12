@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local data files
+/repo.car
+/bluesky_feeds.opml
+/mastodon_feeds.opml
+/following_accounts.csv
