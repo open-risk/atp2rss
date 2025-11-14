@@ -1,0 +1,7 @@
+[project]
+name = "atp2rss"
+version = "0.1.0"
+description = "A small toolkit to help convert AT Protocol and ActivityPub subscription lists to RSS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
