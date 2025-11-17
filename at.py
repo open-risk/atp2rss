@@ -7,6 +7,7 @@ Description: This script converts a bluesky follow list into an OPML file for us
 License: GPL
 Contact: info@openriskmanagement.com
 """
+import datetime
 
 from atproto import CAR, IdResolver
 import xml.etree.ElementTree as ET
@@ -44,6 +45,8 @@ opml = ET.Element("opml", version="2.0")
 head = ET.SubElement(opml, "head")
 ET.SubElement(head, "description").text = description
 ET.SubElement(head, "title").text = title
+ET.SubElement(head, "dateCreated").text = datetime.datetime.now()
+ET.SubElement(head, "ownerName").text = "Private"
 body = ET.SubElement(opml, "body")
 
 for key, value in follows.items():
