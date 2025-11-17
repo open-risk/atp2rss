@@ -32,7 +32,8 @@ opml = ET.Element("opml", version="2.0")
 head = ET.SubElement(opml, "head")
 ET.SubElement(head, "title").text = title
 ET.SubElement(head, "description").text = description
-ET.SubElement(head, "dateCreated").text = datetime.datetime.now()
+now = datetime.datetime.now()
+ET.SubElement(head, "dateCreated").text = now.isoformat()
 ET.SubElement(head, "ownerName").text = "Private"
 body = ET.SubElement(opml, "body")
 
