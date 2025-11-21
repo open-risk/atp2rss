@@ -42,6 +42,16 @@ On the web interface of your Mastodon instance:
 * This downloads a file named following_accounts.csv to the default directory of your browser
 * Move the following_accounts.csv file to the atp2rss/data directory
 
+### YouTube
+
+On the web interface of your YouTube account
+
+* Follow instructions for a takeout and export your data
+* Make sure to select only subscriptions
+* This will eventually download a file named takeout-XXXX.zip to the default directory of your browser
+* Move and unzip this file to the atp2rss/data directory. This will create a csv file
+
+
 ## Dependencies
 
 To parse the AtProto export (CAR file) we need the atproto library (also needed for resolving did's).
